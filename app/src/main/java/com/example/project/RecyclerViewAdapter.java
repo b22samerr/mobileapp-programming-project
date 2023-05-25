@@ -1,29 +1,24 @@
 package com.example.project;
 
-import android.content.Context;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.TextView;
-
-import java.util.List;
-
-import androidx.annotation.NonNull;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
-import java.util.List;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewItem> {
-    private List<FootballTeams> FootballTeams;
+    private List<FootballTeams> footballTeams;
     public RecyclerViewAdapter(List<FootballTeams> FootballTeams) {
-        this.FootballTeams = FootballTeams;
+        this.footballTeams = FootballTeams;
+    }
+
+    public void addData(ArrayList<FootballTeams> newData){
+        this.footballTeams = newData;
+        notifyDataSetChanged();
     }
 
     @NonNull
@@ -35,15 +30,15 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewItem> 
 
     @Override
     public void onBindViewHolder(@NonNull RecyclerViewItem holder, int position) {
-        holder.id.setText(FootballTeams.get(position).getId());
-        holder.name.setText(FootballTeams.get(position).getName());
-        holder.location.setText(FootballTeams.get(position).getLocation());
-        holder.cost.setText(FootballTeams.get(position).getCost());
-        holder.size.setText(String.valueOf(FootballTeams.get(position).getSize()));
+        holder.id.setText(footballTeams.get(position).getId());
+        holder.name.setText(footballTeams.get(position).getName());
+        holder.location.setText(footballTeams.get(position).getLocation());
+        holder.cost.setText(String.valueOf(footballTeams.get(position).getCost()));
+        holder.size.setText(String.valueOf(footballTeams.get(position).getSize()));
     }
 
     @Override
     public int getItemCount() {
-        return FootballTeams.size();
+        return footballTeams.size();
     }
 }
