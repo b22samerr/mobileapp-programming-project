@@ -1,3 +1,4 @@
 <resources>
-    <string name="about_text">Project</string>
+    <string name="app_name">Project</string>
+    <string name="about_text"></string>
 </resources>

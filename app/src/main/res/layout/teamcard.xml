@@ -9,7 +9,6 @@
         android:id="@+id/item_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -17,7 +16,7 @@
         android:id="@+id/rubrik1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ID och Namn:"
+        android:text="Fotbollslag:"
         app:layout_constraintTop_toBottomOf="@+id/item_id"
         app:layout_constraintStart_toStartOf="parent"
         android:textStyle="bold|italic"/>
@@ -26,7 +25,7 @@
         android:id="@+id/item_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="@string/about_text"
         app:layout_constraintTop_toBottomOf="@+id/rubrik1"
         app:layout_constraintStart_toStartOf="parent"/>
 
@@ -34,7 +33,7 @@
         android:id="@+id/rubrik2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Företag: "
+
         app:layout_constraintTop_toBottomOf="@+id/item_name"
         app:layout_constraintStart_toStartOf="parent"
         android:textStyle="bold|italic"/>
@@ -43,7 +42,7 @@
         android:id="@+id/item_company"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+
         app:layout_constraintTop_toBottomOf="@+id/rubrik2"
         app:layout_constraintStart_toStartOf="parent"/>
 
@@ -51,7 +50,7 @@
         android:id="@+id/rubrik3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Storlek"
+        android:text="Antal spelare och Klubbens värde (Euro)"
         app:layout_constraintTop_toBottomOf="@+id/item_company"
         app:layout_constraintStart_toStartOf="parent"
         android:textStyle="bold|italic"/>
@@ -65,7 +64,7 @@
         app:layout_constraintStart_toStartOf="parent"/>
 
     <TextView
-        android:id="@+id/rubrik4"
+        android:id="@+id/item_cost"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Plats:"
@@ -78,7 +77,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
-        app:layout_constraintTop_toBottomOf="@+id/rubrik4"
+        app:layout_constraintTop_toBottomOf="@+id/item_cost"
         app:layout_constraintStart_toStartOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
