@@ -1,7 +1,10 @@
 package com.example.project;
 
+import com.google.gson.annotations.SerializedName;
+
 public class FootballTeams {
 
+    @SerializedName("ID")
     private String id;
     private String name;
     private String location;
