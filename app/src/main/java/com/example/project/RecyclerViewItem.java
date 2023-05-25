@@ -19,6 +19,6 @@ public class RecyclerViewItem extends RecyclerView.ViewHolder {
         name = itemView.findViewById(R.id.item_name);
         location = itemView.findViewById(R.id.item_location);
         size = itemView.findViewById(R.id.item_size);
-
+        cost = itemView.findViewById(R.id.item_cost);
     }
 }
