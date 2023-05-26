@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Jag visar upp information om påhittade fotbollslag"
+        android:text="Jag visar upp information om påhittade fotbollslag. Till exempel klubbens värde, antal spelare, stad och fotbollsklubbens namn. Målgruppen är personer som har ett intresse för fotboll"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
